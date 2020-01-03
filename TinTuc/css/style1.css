@@ -1,0 +1,512 @@
+body {
+	background-color: white;
+    margin: 0%;
+    padding: 0%;
+	
+}
+
+#container {	
+	margin: 5px;
+	width: 1350px;
+	margin-left: auto;
+	margin-right: auto;
+    background-color: #2a5b5b;
+}
+#footer {
+    background-color: #ADD8E6;
+    margin-top: 50px;
+}
+.clear{
+	clear: both;
+}
+#container a {
+	color: white;
+	text-decoration: none;
+	margin-left: 11px;
+}
+#header {
+	background-color: #039999;
+	font-size: 16px;
+	padding: 10px;
+}
+#header a:hover {
+	transform: scale(1.2);
+}
+#log {
+        text-decoration: none;
+}
+#log a{
+
+    text-align: center;
+    float: left;
+    width: 90px;
+    margin-top: 1px;
+    font-size: 12px;
+    border: 1px solid #e4d8d4;
+    border-radius: 13px;
+    padding: 5px;
+}
+.dangki {
+    float: left;
+    width: 90px;
+}
+#log a:hover{
+    background-color: #3ea3a3;
+}
+#title {
+	float: left;
+	margin-left: 10px;
+    margin-top: -12px;
+	font-size: 30px;
+    animation: animate 6s infinite ease-in-out;
+}   
+@keyframes animate
+{
+    0%
+    {
+        transform: rotateY(0deg);
+    }
+    20%
+    {
+        transform: rotateY(360deg);
+    }
+    40%
+    {
+        transform: rotateY(180deg);
+    }
+    60%
+    {
+        transform: rotateY(0deg);
+    }
+    80%
+    {
+        transform: rotateY(360deg);
+    }
+}
+
+#search {
+	float: left;
+	margin-left: 300px;
+	margin-right: 360px;
+}
+
+#search input {
+	border-radius: 5px;
+	width: 300px;
+}
+#search i:hover {
+	transform: scale(1.2);
+}
+
+#nav {  
+    display: block;
+    background-color: darkslategray;
+    max-height: 40px;
+    max-width: 1350px;
+    border-radius: 5px;
+    margin: 1px 0 -1px 1px;
+    margin-left: -1px;
+    z-index: 100000;
+}
+
+#nav ul {
+    margin: 0.5px;
+    padding: 0.5px;
+    display: flex;
+}
+#nav ul li {
+    list-style: none;
+    margin: 0 15px;
+    transition: 0.5s;
+    margin-left: 15px;
+}
+#nav ul li a {
+    display: block;
+    position: relative;
+    text-decoration: none; /* bỏ gạch chân link */
+    padding: 6px;
+    font-size: 16px;
+    font-family: sans-serif;
+    color: aliceblue;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+#nav ul:hover li a{
+    transform: scale(1.1);
+    opacity: 0.2;
+    filter: blur(0); /* làm mờ */
+}
+#nav ul li a:hover{
+    transform: scale(1.2);
+    opacity: 1;
+    filter: blur(0);
+}
+#nav ul li a:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #2a7575;
+    transition: transform 0.5s;
+    transform-origin: right;
+    transform: scaleX(0);
+    z-index: -1;
+    border-radius: 6px;
+}
+#nav ul li a:hover:before {
+    transition: transform 0.5s;
+    transform-origin: left;
+    transform: scaleX(1);
+}
+/*content_columns*/
+#content_columns {
+    max-width: 1020px;
+    height: 520px;
+    margin-top: 20px;
+    background-color: #140f0f;
+}
+#content_columns p {   
+    width: auto;
+    margin-left: 50px;
+}
+#content_columns .left {
+    float: left;
+    margin-left: 20px;
+    width: 1000px;
+    height: 400px;
+}
+.slide {
+    width: 1020px;
+}
+.slide img {
+    margin-left: 35px;
+}
+.prev-next {
+    position: relative;
+    margin-top: -200px;
+    margin-left: -75px;
+}
+
+.content-slide {
+    float: left;
+    color: white;
+}
+
+.content-slide-title {
+    position: relative;
+    margin-left: -100px;
+}
+
+#content_columns h1{
+    padding-left: 10px;
+    text-align: left;
+    color: white;
+    background-color: #282721;
+}
+
+.product-items {
+    float: left;
+    width: 1020px;
+    height: 638px;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    background-color: #140f0f;
+}
+.product-items h1{
+    padding-left: 10px;
+    text-align: left;
+    margin-top: -9px;
+    color: white;
+    width: 1020px;
+    margin-left: -10px;
+    background-color: #282721;
+}
+.product-items{
+    padding: 10px;
+}
+.product-item{
+    float: left;
+    background-color: #232121;
+    width: 23%;
+    margin: 1%;
+    padding: 7px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    line-height: 26px;
+
+}
+.product-item label{
+    font-weight: bold;
+}
+.product-item h6{
+    font-size: 75%;
+    color: white;
+}
+.product-item p{
+    margin: 0;
+    line-height: 26px;
+    max-height: 50px;
+    color: #ccc;
+    overflow: hidden;
+}
+.product-price{
+    color: red;
+    font-weight: bold;
+}
+.product-img{
+    padding: 5px;
+    margin-bottom: 1px;
+}
+.product-item img{
+    max-width: 100%;
+}
+.product-item ul{
+    margin: 0;
+    padding: 0;
+    border-right: 1px solid #ccc;
+}
+.product-item ul li{
+    float: left;
+    width: 33.3333%;
+    list-style: none;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-right: 0;
+    box-sizing: border-box;
+    }
+.clear-both{
+    clear: both;
+}
+a{
+    text-decoration: none;
+}
+#pagination{
+    text-align: right;
+    margin-top: 15px;
+    margin-right: 10px;
+    }
+.page-item{
+    border: 1px solid #ccc;
+    padding: 5px 9px;
+    color: #000;
+}
+.current-page{
+    background: #000;
+    color: #FFF;
+    }
+.product-item :hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+#main_left {
+    margin-top: 20px;
+    height: 1170px;
+}
+#main_right {
+    position: absolute;
+    background-color: #140f0f;
+    width: 325px;
+    margin-left: 1023px;
+    margin-top: 19px;
+
+}
+
+#main_right h1{
+    text-align: center;
+    margin-bottom: 20px;
+    color: white;
+    background-color: #282721;
+}
+
+#main_right p{
+    padding: 3px;
+    margin-left: 5px;
+    color: white;
+}
+#main_right img {
+    margin-left: 5px;
+}
+#main_right h6 {
+    position: relative;
+    font-size: 70%;
+    margin-top: -12px;
+    margin-left: 30px;
+}
+#main_right a:hover{
+    text-decoration: underline;
+    color:#5F9EA0;
+
+}
+
+#chitiettin {
+    background-color: white;
+    margin-top: 4px;
+    padding: 5px 30px 30px 30px;
+    width: 1020px;
+}
+#chitiettin .tin-img {
+    margin-left: 200px; 
+}
+#chitiettin strong {
+    
+    margin-bottom: 15px;
+}
+#chitiettin h1 {
+    padding-left: 10px;
+    width: 1020px;
+    margin-left: -30px;
+    text-align: left;
+    color: white;
+    background-color: #282721;
+}
+
+.lienquan {
+    width: 1020px;
+}
+.lienquan h1 {
+    padding-left: 10px;
+    width: 1020px;
+    text-align: left;
+    color: white;
+    float: left;
+    background-color: #282721;
+}
+
+.product-tin{
+    float: left;
+    background-color: #232121;
+    width: 30%;
+    margin: 1%;
+    padding: 7px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+    line-height: 26px;
+
+}
+
+.product-tin h6{
+    margin-left: 4px; 
+    font-size: 75%;
+    color: white;
+}
+.product-tin p{
+    margin: 0;
+    line-height: 26px;
+    max-height: 50px;
+    color: #ccc;
+    overflow: hidden;
+}
+.product-tin-img {
+    margin-left: -10px;
+    padding: 5px;
+    margin-bottom: 1px;
+}
+.product-tin img{
+    max-width: 100%;
+}
+.product-tin ul{
+    margin: 0;
+    padding: 0;
+    border-right: 1px solid #ccc;
+}
+.product-tin ul li{
+    float: left;
+    width: 33.3333%;
+    list-style: none;
+    text-align: center;
+    border: 1px solid #ccc;
+    border-right: 0;
+    box-sizing: border-box;
+    }
+
+.dangnhap button{
+    background-color: #3ea3a3;
+    border: none;
+}
+.dangnhap ul li{
+    text-decoration: none;
+    float: left;
+}
+.dangnhap ul li .drop{
+    text-decoration: none;
+    display: none;
+
+}
+.dangnhap ul li:hover .drop{
+    position: relative;
+    display:inline-block;
+    margin-left:-40px;
+}
+
+#searchh{
+    margin-left: 10px;
+    margin-top: 10px;
+    width: 1020px;
+}
+#searchh h1{
+    color: white;
+    background-color: #282721;
+    padding-left: 20px;
+    margin-left: -10px;
+    width: 1020px;
+}
+#searchh button{
+    border: none;
+}
+#searchh input {
+    border-radius: 5px;
+    width: 300px;
+}
+#searchh i:hover {
+    transform: scale(1.2);
+}
+#searchh h3{
+    margin-top: 5px;
+    color: white;
+}
+/*comment*/
+.show-comment {
+    background-color: #e5e5e5;
+    margin-top: 3px;
+    border-radius: 10px;
+}
+.show-comment h5{
+    color: #007fff;
+    margin-top: -15px;
+}
+.show-comment p{
+    margin-top: -5px;
+    margin-left: -30px;
+}
+.show-comment h6{
+    font-size: 90%;
+}
+
+.tinmoi{
+    float: left;
+    margin-top: 10px;
+    background-color: #140f0f;
+    width: 1020px;
+}
+.tinmoi-tin{
+    width: 320px;
+    height: 330px;
+    padding: 5px;
+    margin-top: 5px;
+    margin-left: 15px;
+    margin-bottom: 5px;
+    border: 1px solid white;
+    float: left;
+}
+.tinmoi-h1 h1{
+    padding-left: 10px;
+    text-align: left;
+    color: white;
+    width: 1020px;
+    background-color: #282721;
+}
+.show-comment #contentCMT {
+    margin-left: 5px;
+}
